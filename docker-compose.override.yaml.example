@@ -1,0 +1,5 @@
+services:
+  node:
+    command: "yarn fractal start --sync --port ${DOCKER_WEB_PORT:-3000}"
+    ports:
+      - "${DOCKER_WEB_PORT:-3000}:${DOCKER_WEB_PORT:-3000}"

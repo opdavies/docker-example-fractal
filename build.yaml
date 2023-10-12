@@ -1,0 +1,13 @@
+name: docker-example-fractal
+language: javascript
+type: fractal
+
+node:
+  version: 20-bullseye-slim
+
+docker-compose:
+  services:
+    web: false
+
+experimental:
+  createGitHubActionsConfiguration: true
